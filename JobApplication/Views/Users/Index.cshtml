@@ -33,7 +33,7 @@
 							@Html.DisplayFor(modelItem => item.Id)
 						</td>
 						<td class="align-middle">
-							@Html.DisplayFor(modelItem => item.Name) @Html.DisplayFor(modelItem => item.LastName)
+							<a asp-controller="Users" asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Name) @Html.DisplayFor(modelItem => item.LastName)</a>
 						</td>
 						<td class="align-middle">
 							@Html.DisplayFor(modelItem => item.Phone)
